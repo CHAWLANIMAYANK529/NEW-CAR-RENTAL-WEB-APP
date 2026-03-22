@@ -29,8 +29,12 @@
 <div class="nav-container">
 
 <a href="#" class="logo">Mayank Car Rental</a>
+   <!-- HAMBURGER -->
+      <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+      </div>
+<ul class="nav-links" id="navLinks">
 
-<ul class="nav-links">
 <li><a href="index.html">Home</a></li>
 <li><a href="fleet.html">Fleet</a></li>
 <li><a href="contact.html">Contact</a></li>
@@ -1812,5 +1816,10 @@ clearInterval(interval);
 </script>
 
 <div class="card" data-aos="slide-right"></div>
+<script>
+function toggleMenu(){
+  document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
 </body>
 </html>
